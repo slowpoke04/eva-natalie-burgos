@@ -9,14 +9,14 @@ const About = () => {
 
         <p>
           Hello! </p>
-          <p>My name is Natalie, I'm a Biomedical Engineering student at the
+          <p>My name is Natalie, I&apos;m a Biomedical Engineering student at the
           University of Texas at Dallas. I chose BME because it merges scientific
           problem-solving with creativity to build solutions that meaningfully support
           human health.
         </p>
 
         <p>
-  Throughout my undergraduate career, I've gained hands-on experience in 
+  Throughout my undergraduate career, I&apos;ve gained hands-on experience in 
   medical device development, product testing, and engineering validation 
   through <a href="https://www.argonmedical.com/" target="_blank" rel="noopener noreferrer" 
   className="font-semibold text-white">internships</a>,  
@@ -31,11 +31,11 @@ const About = () => {
 <p>
   I also work in two research labs at UTD. In 
   <a href="https://labs.utdallas.edu/bmnl/" target="_blank" rel="noopener noreferrer" 
-  className="font-semibold text-white"> Dr. Prasad's Lab</a>, 
+  className="font-semibold text-white"> Dr. Prasad&apos;s Lab</a>, 
   I support the development of electrochemical sensors for environmental and biological 
   applications. In 
   <a href="http://danieli.wikidot.com/" target="_blank" rel="noopener noreferrer" 
-  className="font-semibold text-white"> Dr. Rodrigues's Lab</a>, 
+  className="font-semibold text-white"> Dr. Rodrigues&apos;s Lab</a>, 
   I contribute to biomaterials and tissue-engineering research. These experiences strengthened 
   my interest in translational engineering and shaped how I approach designing practical, 
   human-centered biomedical solutions.

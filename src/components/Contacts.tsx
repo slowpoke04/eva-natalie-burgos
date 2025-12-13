@@ -1,5 +1,5 @@
 // import { Github, Linkedin, Youtube } from "lucide-react";
-import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
