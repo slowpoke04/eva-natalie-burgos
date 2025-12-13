@@ -4,7 +4,7 @@ import "./globals.css";
 import "@/components/utils/ThemeProvider";
 import ThemeProvider from "@/components/utils/ThemeProvider";
 import Header from "@/components/Header";
-import MobileHeader from "@/components/utils/MobileHeader";
+
 
 
 
@@ -29,18 +29,14 @@ export default function RootLayout({
      <body className={`${inter.variable} font-sans depth-bg`}>
 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-  {/* Mobile header */}
-  <MobileHeader />
-
-  <div className="lg:flex">
-    {/* Desktop sidebar */}
+  <div className="flex">
     <Header />
-
     <main className="flex-1 px-6 lg:px-0">
       {children}
     </main>
   </div>
 </ThemeProvider>
+
 
       </body>
     </html>
