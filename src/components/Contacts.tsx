@@ -2,7 +2,7 @@
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+//import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGooglescholar } from "react-icons/si"; // ← Google Scholar icon
 
 // TODO: magic links and social media, use json or some config file to obtain reference link
