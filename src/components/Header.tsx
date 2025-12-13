@@ -8,7 +8,8 @@ const Header = () => {
   return (
     <aside
       className="
-        flex
+        hidden lg:flex w-full
+
         lg:sticky lg:top-0
         h-screen
         w-[420px]

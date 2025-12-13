@@ -29,14 +29,17 @@ export default function RootLayout({
      <body className={`${inter.variable} font-sans depth-bg`}>
 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-  <div className="flex">
+  <div className="grid lg:grid-cols-[420px_1fr]">
+    {/* Sidebar */}
     <Header />
-    <main className="flex-1 px-6 lg:pl-[420px] lg:pr-0">
-  {children}
-</main>
 
+    {/* Main content */}
+    <main className="px-6 lg:px-12">
+      {children}
+    </main>
   </div>
 </ThemeProvider>
+
 
 
       </body>
