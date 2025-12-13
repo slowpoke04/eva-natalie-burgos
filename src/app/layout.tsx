@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@/components/utils/ThemeProvider";
 import ThemeProvider from "@/components/utils/ThemeProvider";
+import Header from "@/components/Header";
+import MobileHeader from "@/components/utils/MobileHeader";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,8 +28,19 @@ export default function RootLayout({
      <body className={`${inter.variable} font-sans depth-bg`}>
 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
-        </ThemeProvider>
+  {/* Mobile header */}
+  <MobileHeader />
+
+  <div className="flex">
+    {/* Desktop sidebar header */}
+    <Header />
+
+    <main className="flex-1">
+      {children}
+    </main>
+  </div>
+</ThemeProvider>
+
       </body>
     </html>
   );
