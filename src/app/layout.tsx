@@ -31,9 +31,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
   <div className="flex">
     <Header />
-    <main className="flex-1 px-6 lg:px-0">
-      {children}
-    </main>
+    <main className="flex-1 px-6 lg:pl-[420px] lg:pr-0">
+  {children}
+</main>
+
   </div>
 </ThemeProvider>
 
