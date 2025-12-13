@@ -1,7 +1,6 @@
 "use client";
 
 import Menu from "../Menu";
-
 import PageDetailsFile from "@p/configs/page_details.json";
 
 const MobileHeader = () => {
