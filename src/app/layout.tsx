@@ -29,7 +29,8 @@ export default function RootLayout({
      <body className={`${inter.variable} font-sans depth-bg`}>
 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-  <div className="grid lg:grid-cols-[420px_1fr]">
+  <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr]">
+
     {/* Sidebar */}
     <Header />
 
