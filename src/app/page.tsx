@@ -13,7 +13,7 @@ export default function Home() {
       <main className="relative z-10">
         <div className="mx-auto max-w-[1300px] px-6">
           <div className="flex flex-col lg:flex-row lg:gap-24">
-            <Header />
+           
 
             {/* Scrollable content */}
             <div className="flex-1 pt-24">
