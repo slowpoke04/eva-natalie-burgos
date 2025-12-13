@@ -1,0 +1,99 @@
+{
+  "header": {
+    "introduction": "Eva Natalie Burgos",
+    "position": "Biomedical Engineer",
+    "summary": "I explore how thoughtful engineering can improve the way we understand and support the human body."
+  },
+
+  "menu": [
+    {"isActive": false, "section": "about"},
+    {"isActive": false, "section": "experience"},
+    {"isActive": false, "section": "projects"}
+  ],
+  "education": [  {
+    "subject": "Mechanical Engineering",
+    "degree": "MS",
+    "university": "Texas A&M University"
+  },
+  {
+    "subject": "Mechanical Engineering",
+    "degree": "BS",
+    "university": "Texas A&M University"
+}],
+  "experience":  [ { 
+    "position": "Robotics Engineer",
+    "prevPositions": [""],
+    "company": "Greensea IQ",
+    "startDate": "Oct 2021",
+    "endDate": "Feb 2024",
+    "description": "I expanded Greensea's autonomy stack for a fleet of underwater robotics. This entailed localization, mapping, and obstacle avoidance for both holonomic and nonholonomic vehicles. Some projects I contributed towards are the following: EverClean (ship hull cleaning service), OPENSEA (hardware agnostic software for underwater robotics), Bayonet AUGV (sea floor surveying), and EOD (Explosive Ordnance Neutralization).",
+    "skills": ["C++", "Python", "LCM", "OpenCV", "PCL", "Git", "Docker", "Data Analysis"],
+    "mainLink": "https://greenseaiq.com/",
+    "sideLinks": [{"label":"EOD Demo", "link":"https://www.youtube.com/watch?v=XmifeADVPSM&ab_channel=GreenseaIQ"}]
+  }, { 
+    "position": "Research Engineer",
+    "company": "Bush Combat Development Complex",
+    "startDate": "May 2020",
+    "endDate": "Sep 2021",
+    "description": "The main problem we were solving was related to multi-agent systems where we needed decisive coordination between multiple ground and air vehicles. I concentrated on sensor processing, mapping, and navigation for off-road ground automobiles.",
+    "skills": ["C++", "Python", "ROS", "OpenCV", "PCL", "Git", "Docker"],
+    "mainLink": "https://bcdc.tamus.edu/core-competencies/coordinated-air-ground-vehicle-maneuvering/"
+  },
+  { 
+    "position": "Graduate Researcher",
+    "company": "Connected Autonomous Safe Technologies",
+    "startDate": "Aug 2018",
+    "endDate": "May 2020",
+    "description": "I designed and implemented a data-driven nonlinear longitudinal and lateral controller for ground vehicles.",
+    "skills": ["Python", "ROS"],
+    "mainLink": "https://cast.tamu.edu/"
+    
+  },  { 
+    "position": "Controls Team Lead",
+    "company": "SAE AutoDrive Challenge",
+    "startDate": "Aug 2017",
+    "endDate": "May 2018",
+    "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
+    "skills": ["C++", "Python", "MATLAB", "ROS"],
+    "mainLink": "https://www.autodrivechallenge.com/",
+    "sideLinks": [{"label":"2nd Place Article", "link":"https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"}]
+
+  }],
+  "projects": [
+  {
+    "title": "Smart Health Dashboard",
+    "description": "A responsive Next.js dashboard that displays health metrics using custom visualizations and real-time data parsing. Designed to mimic medical device UI standards with clean typography and high-contrast accessibility styling.",
+    "skills": ["Next.js", "Typescript", "Tailwind", "UI/UX"],
+    "github": "https://github.com/placeholder"
+  },
+  {
+    "title": "Wearable Prototype Analysis Toolkit",
+    "description": "A toolkit for analyzing prototype device outputs, featuring signal smoothing, calibration functions, and automated graph generation. Built for early-stage device iteration and testing workflows.",
+    "skills": ["Python", "Matplotlib", "Data Processing"],
+    "github": "https://github.com/placeholder"
+  },
+  {
+    "title": "Biomedical CAD Library",
+    "description": "A curated set of parametric SolidWorks models for connectors, housings, and testing fixtures used in medical device prototypes. Created to standardize rapid iteration across student and research teams.",
+    "skills": ["SolidWorks", "CAD Modeling", "Product Design"]
+  },
+  {
+    "title": "Lab Automation Script Suite",
+    "description": "A collection of Python scripts that streamline repetitive research tasks such as file naming, batch data cleaning, excel logging, and curve fitting for electrochemical experiments.",
+    "skills": ["Python", "Automation", "Numpy", "Pandas"],
+    "github": "https://github.com/placeholder"
+  },
+  {
+    "title": "Portfolio Redesign",
+    "description": "A fully custom, dark-themed personal portfolio inspired by Brittany Chiang. Built with responsive layouts, animated hover states, custom themes, and accessible components for a premium feel.",
+    "skills": ["Next.js", "Tailwind", "Responsive Design"],
+    "github": "https://github.com/placeholder"
+  },
+  {
+    "title": "Human-Centered Engineering Concept Study",
+    "description": "A conceptual exploration of biomedical design principles focusing on ergonomics, manufacturing constraints, and patient-centered usability for wearable and handheld devices.",
+    "skills": ["Human Factors", "Design Thinking", "Prototyping"]
+  }
+]
+
+}
