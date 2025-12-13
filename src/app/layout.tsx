@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import MobileHeader from "@/components/utils/MobileHeader";
 
 
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -31,11 +32,11 @@ export default function RootLayout({
   {/* Mobile header */}
   <MobileHeader />
 
-  <div className="flex">
-    {/* Desktop sidebar header */}
+  <div className="lg:flex">
+    {/* Desktop sidebar */}
     <Header />
 
-    <main className="flex-1">
+    <main className="flex-1 px-6 lg:px-0">
       {children}
     </main>
   </div>
