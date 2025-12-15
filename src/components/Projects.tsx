@@ -1,8 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { FC } from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
+/* ---------------------------------------------
+   Types
+--------------------------------------------- */
 type ProjectDetail = {
   title: string;
   description: string;
@@ -11,13 +13,21 @@ type ProjectDetail = {
   github?: string;
 };
 
-const ProjectItem: FC<ProjectDetail> = ({
+/* ---------------------------------------------
+   Project Data (empty for now)
+--------------------------------------------- */
+const projectDetails: ProjectDetail[] = [];
+
+/* ---------------------------------------------
+   Single Project Card
+--------------------------------------------- */
+const ProjectItem = ({
   title,
   description,
   skills,
   link,
   github,
-}) => {
+}: ProjectDetail) => {
   return (
     <div
       className="
@@ -74,29 +84,38 @@ const ProjectItem: FC<ProjectDetail> = ({
   );
 };
 
-const Projects: FC<{ projectDetails: ProjectDetail[] }> = ({
-  projectDetails,
-}) => {
+/* ---------------------------------------------
+   Projects Section
+--------------------------------------------- */
+const Projects = () => {
   return (
-    <section id="projects" className="flex flex-col gap-6 mb-32 lg:mb-48">
+    <section
+      id="projects"
+      className="flex flex-col gap-6 mb-32 lg:mb-48 scroll-mt-28"
+    >
+      {/* DESKTOP HEADER */}
+      <h2 className="hidden lg:block font-bold text-foreground text-2xl tracking-tight mb-6">
+        Projects
+      </h2>
 
-  {/* DESKTOP HEADER */}
-  <h2 className="hidden lg:block font-bold text-foreground text-2xl tracking-tight mb-6">
-    Projects
-  </h2>
+      {/* MOBILE HEADER */}
+      <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
+        Projects
+      </div>
 
-  {/* MOBILE HEADER */}
-  <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
-    Projects
-  </div>
-
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    {projectDetails.map((project, index) => (
-      <ProjectItem key={index} {...project} />
-    ))}
-  </div>
-</section>
-
+      {projectDetails.length === 0 ? (
+        <p className="text-muted-foreground">
+          Projects coming soon. Currently focusing on research, internships, and
+          certifications.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {projectDetails.map((project, index) => (
+            <ProjectItem key={index} {...project} />
+          ))}
+        </div>
+      )}
+    </section>
   );
 };
 

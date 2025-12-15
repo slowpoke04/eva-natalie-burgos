@@ -1,48 +1,36 @@
 import type { Metadata } from "next";
+import type React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "@/components/utils/ThemeProvider";
 import ThemeProvider from "@/components/utils/ThemeProvider";
-import Header from "@/components/Header";
 
-
-
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Natalie Burgos",
-  description:
-    "I build thoughtful, human-centered solutions at the intersection of science and engineering.",
+  title: "Eva Natalie Burgos",
+  description: "Building smart machines",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
-     <body className={`${inter.variable} font-sans depth-bg`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        {/* Brittany-style background */}
+        <div
+  className="fixed inset-0 -z-10
+    bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#020c1b]
+    before:content-[''] before:absolute before:inset-0
+    before:bg-[radial-gradient(ellipse_at_top,rgba(100,255,218,0.04),transparent_60%)]"
+/>
+
 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-  <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr]">
-
-    {/* Sidebar */}
-    <Header />
-
-    {/* Main content */}
-    <main className="px-6 lg:px-12">
-      {children}
-    </main>
-  </div>
-</ThemeProvider>
-
-
-
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

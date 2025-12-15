@@ -1,10 +1,15 @@
 import Menu from "./Menu";
 import Contacts from "./Contacts";
-import PageDetailsFile from "@p/configs/page_details.json";
 
+const menuDetails = [
+  { section: "About", isActive: false },
+  { section: "Experience", isActive: false}, 
+  { section: "Projects", isActive: false}, 
+  { section: "Certifications", isActive: false},
+
+]
 const Header = () => {
-  const header = PageDetailsFile.header;
-
+ 
   return (
     <aside
       className="
@@ -26,15 +31,15 @@ const Header = () => {
         </h1>
 
         <h2 className="text-2xl font-medium text-white">
-          {header.position}
+          Biomedical Engineering Student
         </h2>
 
         <p className="text-[1.05rem] leading-relaxed text-muted-foreground max-w-[340px]">
-          {header.summary}
+          I explore how thoughtful engineering can improve the way we understand and support the human body. 
         </p>
 
         <div className="mt-10">
-          <Menu MenuDetails={PageDetailsFile.menu} />
+          <Menu MenuDetails={menuDetails} />
         </div>
       </div>
 

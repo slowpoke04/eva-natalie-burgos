@@ -1,15 +1,17 @@
 import About from "@/components/About";
-import Experience, { experienceDetails } from "@/components/Experience";
+
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
 import Footnote from "@/components/Footnote";
-import PageDetailsFile from "@p/configs/page_details.json";
 
 const Content = () => {
   return (
-    <section className="flex flex-col gap-12 max-w-[720px]">
+    <section className="flex flex-col gap-16">
       <About />
-      <Experience experienceDetails={experienceDetails} />
-      <Projects projectDetails={PageDetailsFile.projects} />
+      <Experience />
+      <Projects />
+      <Certifications />
       <Footnote />
     </section>
   );
