@@ -1,6 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { LuArrowUpRight } from "react-icons/lu";
-import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 /* ---------------------------------------------
@@ -22,6 +20,25 @@ type ProjectDetail = {
    Project Data (empty for now)
 --------------------------------------------- */
 const projectDetails: ProjectDetail[] = [
+  {
+  title: "Smart Drug-Delivery Pen (Texas Instruments)",
+  slug: "ti-drug-delivery-pen",
+  description:
+    "Developed a proof-of-concept smart drug-delivery pen integrating automated mechanical actuation, NFC cartridge authentication, BLE communication, embedded sensing, and electronic safety controls. Led CAD design and prototyping while supporting hardware integration and system testing.",
+  skills: [
+    "SolidWorks",
+    "Medical Device Design",
+    "Embedded Systems",
+    "NFC",
+    "BLE",
+    "Prototyping",
+    "Mechanical Testing",
+  ],
+  date: "Aug 2026",
+  year: 2026,
+  image: "/images/cross-sectional final design.png",
+},
+
   {
     title: "3D-Printed Prosthetic Hand",
     slug: "prosthetic-hand",
@@ -90,11 +107,8 @@ const ProjectItem = ({
   description,
   skills,
   date,
-  year,
   image,
   slug,
-  link,
-  github,
 }: ProjectDetail) => {
   return (
     <Link href={`/en/projects/${slug}`}>

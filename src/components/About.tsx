@@ -12,7 +12,7 @@ const About = () => {
           <p>My name is Natalie, I&apos;m a Biomedical Engineering student at the
           University of Texas at Dallas. I chose BME because it merges scientific
           problem-solving with creativity to build solutions that meaningfully support
-          human health.
+          human health. 
         </p>
 
         <p>
